@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wheels homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <h3>Wheels Hub</h3>
+            </div>
+            <div class="nav-links">
+                <a href="#">Explore Wheels</a>
+                <div>
+                    <a href="#">Our Services</a>
+                    <a class="btn" href="#">About</a>             
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <h1>Explore the <br/>Every Wheel</h1>
+            <div class="search">
+                <input type="text" placeholder="search any wheel">
+            </div>
+            <button type="submit">Search</button>
+        </div>
+    </div>
+    <div class="form">
+        <div class="box">
+            <input type="email" name="email" placeholder="Enter your email">
+            <input type="password" name="password" placeholder="password">
+        </div>
+       <!-- <div class="link">
+            <a href="#">Log In</a>
+        </div> -->
+        <button class="login-btn" onclick= "func()">
+            LOGIN
+        </button>
+        <div class="link1">
+            <a href="#">Forgot password</a>
+        </div>
+        <div class="link2">
+            <a href="#">Create New Account</a>
+        </div>
+    </div>
+    <script>
+        function func(){
+            var email = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+            if(email == 'pandurusanjay09@gmail.com' && pass == 'sanjay21' ){
+                alert("Successfully loged in"); 
+                window.location.assign("hi.html");
+            }
+            else{
+                alert("wrong entry, invalid");
+            }
+        }
+    </script>
+</body>
+</html>
